@@ -24,6 +24,8 @@ test("render input box", () => {
   render(<Counter />);
   let inputbox = screen.getByRole("textbox");
   let checkPlaceholder = screen.getByPlaceholderText("Type here...");
+  let checkLabel = screen.getByText("Add");
+  expect(checkLabel).toBeInTheDocument();
 
   expect(inputbox).toBeInTheDocument();
   expect(checkPlaceholder).toBeInTheDocument();
