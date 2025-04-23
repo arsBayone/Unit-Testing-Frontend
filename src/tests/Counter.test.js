@@ -13,7 +13,7 @@ import Counter from "../components/Counter";
 test("renders counter with initial value", () => {
   console.log("test 1 ************");
   render(<Counter />);
-  const text = screen.getByText("React Counter");
+  const text = screen.getByText(/React Counter/i);
   const image = screen.getByTitle("React image");
   expect(text).toBeInTheDocument();
   expect(image).toBeInTheDocument();
@@ -36,12 +36,12 @@ test("render input box", () => {
 //   expect(getByTestId("count").textContent).toBe("0");
 // });
 
-// test("increments counter on button click", () => {
-//   const { getByTestId } = render(<Counter />);
-//   const button = getByTestId("increment");
-//   fireEvent.click(button);
-//   expect(getByTestId("count").textContent).toBe("1");
-// });
+test("increments counter on button click", () => {
+  const { getByTestId } = render(<Counter />);
+  const button = getByTestId("increment");
+  fireEvent.click(button);
+  expect(getByTestId("count").textContent).toBe("1");
+});
 
 describe("ui test", () => {
   test("input change", () => {
