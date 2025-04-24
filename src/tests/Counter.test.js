@@ -54,6 +54,6 @@ describe("ui test", () => {
   });
 });
 
-afterAll(() => {
-  console.log("after All tests ************8");
-});
+// afterAll(() => {
+//   console.log("after All tests ************8");
+// });

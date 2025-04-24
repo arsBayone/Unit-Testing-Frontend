@@ -7,7 +7,7 @@ const Counter = () => {
 
   return (
     <div>
-      <h1>React Counter</h1>
+      <h1>React counter gjdb</h1>
       <h3>Add new</h3>
       <img
         title="React image"
