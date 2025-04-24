@@ -9,6 +9,7 @@ const Counter = () => {
     <div>
       <h1>React counter gjdb</h1>
       <h3>Add new</h3>
+      <h3>Add 2</h3>
       {/* <h3>Added</h3> */}
       <img
         title="React image"
